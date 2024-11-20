@@ -194,13 +194,22 @@ h2 {
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   gap: 0;
   justify-content: space-evenly; /* Distribute buttons evenly */
+  flex-wrap: wrap; /* Allow wrapping for sticky buttons */
+  display: flex;
 }
 
+/* Sticky Buttons with Smaller Size */
 .control-buttons.sticky button {
-  width: 60px;  /* Fixed width to make the buttons square */
-  height: 60px; /* Fixed height to make the buttons square */
+  width: 40%;  /* Slightly smaller width for buttons */
+  height: 50px; /* Smaller height for square shape */
   padding: 0;
-  font-size: 1rem;  /* Adjust font size for square shape */
+  font-size: 0.9rem;  /* Smaller font size */
+  margin: 5px 0; /* Add some margin between the buttons when they wrap */
+}
+
+/* Ensure they only appear 2 per row when sticky */
+.control-buttons.sticky button:nth-child(odd) {
+  margin-right: 5%; /* Add spacing for the first button in the row */
 }
 
   </style>
