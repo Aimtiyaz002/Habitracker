@@ -240,18 +240,18 @@ h2 {
     "July", "August", "September", "October", "November", "December"
   ];
 
-  let selectedColor = "red"; // Default color
-  let multipleMode = true; // Default mode
+  let selectedColor = "green"; // Default color
+  // let multipleMode = true; // Default mode
   let lastAction = []; // Track last action to undo
   let isErasing = false; // Track if the eraser mode is active
 
   // Set up color toggle button
-  const colorToggleButton = document.getElementById("toggleColor");
-  colorToggleButton.addEventListener("click", () => {
-    selectedColor = selectedColor === "red" ? "green" : "red";
-    colorToggleButton.style.backgroundColor = selectedColor === "red" ? "#e74c3c" : "#2ecc71";
-    colorToggleButton.textContent = selectedColor === "red" ? "Red Selected" : "Green Selected";
-  });
+  // const colorToggleButton = document.getElementById("toggleColor");
+  // colorToggleButton.addEventListener("click", () => {
+  //   selectedColor = selectedColor === "red" ? "green" : "red";
+  //   colorToggleButton.style.backgroundColor = selectedColor === "red" ? "#e74c3c" : "#2ecc71";
+  //   colorToggleButton.textContent = selectedColor === "red" ? "Red Selected" : "Green Selected";
+  // });
 
   // Toggle between multiple and single mode
   document.getElementById("toggleMode").addEventListener("click", () => {
